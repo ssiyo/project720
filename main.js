@@ -110,7 +110,7 @@ function readTitle(targetTitle) {
             show(contributionBtn);
             contributionBtn.onclick = () => {
                 location.href =
-                    "https://github.com/ssiyo/project720/" +
+                    "https://github.com/ssiyo/project720/blob/main/" +
                     curSubject +
                     "/" +
                     targetTitle.toLowerCase() +
