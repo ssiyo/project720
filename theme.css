@@ -1,0 +1,20 @@
+:root {
+    --light1: rgba(255, 255, 255, 0.25);
+    --light2: rgba(255, 255, 255, 0.5);
+    --c0: rgba(0, 0, 0, 0.5); /* input bg color*/
+    --c1: #222; /* base background color*/
+    --c2: #333; /* on base */
+    --c3: #444; /* over on base */
+    --c4: #666; /* top level */
+}
+/* 
+    LIGHT THEME
+:root {
+    --light1: rgba(0, 0, 0, 0.25);
+    --light2: rgba(0, 0, 0, 0.5);
+    --c0: rgba(255, 255, 255, 0.5); 
+    --c1: #ddd; 
+    --c2: #ccc; 
+    --c3: #bbb; 
+    --c4: #999; 
+} */

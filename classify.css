@@ -1,0 +1,245 @@
+* {
+    color: white;
+    font-size: 100%;
+    outline: none;
+    box-sizing: border-box;
+}
+.hidden {
+    display: none !important;
+}
+.w-fit {
+    width: fit-content;
+}
+.w-full {
+    width: 100%;
+}
+.onsurface {
+    background-color: var(--c2);
+}
+.oversurface {
+    background-color: var(--c3);
+}
+.popup {
+    z-index: 1;
+    background-color: var(--c3);
+}
+
+
+.flex {
+    display: flex;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+.x-between {
+    justify-content: space-between;
+}
+.x-center {
+    justify-content: center;
+}
+.y-center {
+    align-items: center;
+}
+.y-start {
+    align-items: start;
+}
+.y-stretch {
+    align-items: stretch;
+}
+.xy-center {
+    justify-content: center;
+    align-items: center;
+}
+.gap-1 {
+    gap: 0.25em;
+}
+.gap-2 {
+    gap: 0.5em;
+}
+.gap-3 {
+    gap: 1em;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.bordered {
+    border: 1px solid var(--light1);
+}
+.bordered-focus {
+    border: 1px solid var(--c4);
+}
+
+.clickables > *,
+.clickable {
+    cursor: pointer;
+}
+.hoverables > span:hover,
+.hoverables > a:hover {
+    background-color: var(--light1);
+    cursor: pointer;
+}
+
+.clicked {
+    animation: shock 0.5s;
+}
+@keyframes shock {
+    50% {
+        box-shadow: 0 0 0 1px var(--light2);
+    }
+}
+
+/* PADDING */
+.pad-spans > * {
+    padding: 0.25em 0.5em;
+}
+
+button:disabled {
+    opacity: 0.25;
+}
+button.switched,
+button.icon.switched {
+    border-radius: 0;
+    background-color: var(--light1);
+    border-color: var(--light2);
+}
+.icon {
+    border-radius: 50%;
+}
+button.labeled {
+    padding: 0 0.5em;
+    border-radius: 1em;
+}
+label.focus {
+    border: 1px solid var(--c4);
+}
+label:not(.focus) button {
+    display: none;
+}
+body {
+    background-color: var(--c1);
+}
+
+textarea {
+    resize: none;
+}
+input,
+textarea {
+    background-color: var(--c0);
+    border: 1px solid var(--light1);
+    padding: 0.25em 0.5em;
+    width: 100%;
+}
+input:read-only,
+textarea:read-only {
+    background-color: transparent;
+}
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+    border-color: var(--c4);
+}
+label {
+    background-color: var(--c0);
+    display: flex;
+    align-items: stretch;
+    border: 1px solid var(--light1);
+    padding: 0.25em;
+}
+label input {
+    background-color: transparent;
+    min-height: 24px;
+}
+label input,
+label button {
+    border: none;
+    padding: 0;
+}
+label button:hover {
+    background-color: transparent;
+    border: none;
+}
+label > img:first-child {
+    margin-right: 0.5em;
+}
+label img {
+    opacity: 0.5;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 0;
+
+    cursor: pointer;
+    /* Remove the blue mobile tap highlight color */
+    -webkit-tap-highlight-color: transparent; /* Makes the highlight transparent */
+}
+button:hover {
+    background-color: var(--light1);
+    border: 1px solid var(--c4);
+}
+img {
+    min-width: 24px;
+    min-height: 24px;
+}
+label img,
+button img {
+    user-select: none;
+    pointer-events: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.pad-11 {
+    padding: 0.25em;
+}
+.pad-22 {
+    padding: 0.5em;
+}
+.pad-33 {
+    padding: 1em;
+}
+
+.pad-12 {
+    padding: 0.25em 0.5em;
+}
+.pad-23 {
+    padding: 0.5em 1em;
+}
+
+.pad-01 {
+    padding: 0 0.25em;
+}
+.pad-02 {
+    padding: 0 0.5em;
+}
+.pad-03 {
+    padding: 0 1em;
+}
+.pad-10 {
+    padding: 0.25em 0;
+}
+.pad-20 {
+    padding: 0.5em 0;
+}
+.pad-30 {
+    padding: 1em 0;
+}

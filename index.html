@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 720</title>
+        <link rel="icon" type="image/png" href="icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="theme.css" />
+        <link rel="stylesheet" href="font.css" />
+        <link rel="stylesheet" href="classify.css" />
+        <style>
+            select {
+                background-color: var(--light1);
+            }
+            option {
+                background-color: var(--c4);
+            }
+            footer {
+                margin-top: 4em;
+                border: 1px solid var(--light1);
+            }
+            footer a {
+                background-color: var(--c2);
+                padding: 0.25em 0.5em;
+                font-size: small;
+            }
+            footer a:nth-child(even) {
+                background-color: var(--light1);
+            }
+
+            main {
+                margin: 0 auto;
+                max-width: 40em;
+            }
+            #to-top {
+                position: fixed;
+                bottom: 2em;
+                right: 1em;
+                background-color: var(--c3);
+            }
+            #edit-page {
+                position: fixed;
+                bottom: 2em;
+                left: 1em;
+                background-color: var(--c3);
+            }
+
+            details {
+                border-top: 1px solid transparent;
+                border-bottom: 1px solid var(--light1);
+                margin: 0.5em 0;
+            }
+            details[open] {
+                background-color: var(--c2);
+                border-color: var(--light2);
+            }
+            summary {
+                display: flex;
+                padding: 0.5em 0;
+                padding-left: 1em;
+                border-bottom: 1px solid var(--light1);
+                cursor: pointer;
+            }
+            summary:hover {
+                background-color: var(--c2);
+            }
+            h1 {
+                font-size: x-large;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div id="books-container">
+                <select></select>
+                <label id="search-bar" class="flex">
+                    <input
+                        autocomplete="off"
+                        id="search-input"
+                        name="search-input"
+                        placeholder="Type here to search"
+                    />
+                    <button onclick="clearSearch()" class="reset">
+                        <img src="clear.svg" />
+                    </button>
+                </label>
+                <div id="results" class="flex-col hoverables pad-30"></div>
+            </div>
+
+            <article></article>
+            <button id="edit-page" class="hidden labeled bordered-focus">
+                <img src="edit.svg" />
+                edit page
+            </button>
+            <button
+                class="bordered-focus"
+                id="to-top"
+                onclick="location.href='#'"
+            >
+                <img src="up.svg" />
+            </button>
+        </main>
+        <footer class="flex w-fit">
+            <a href="https://github.com/ssiyo" target="_blank"> by ssiyo </a>
+            <a
+                href="https://github.com/ssiyo/project720/issues/new"
+                target="_blank"
+            >
+                feature request
+            </a>
+            <a href="https://github.com/ssiyo/project720" target="_blank">
+                codebase
+            </a>
+        </footer>
+        <script src="markdown-it.min.js"></script>
+        <script src="titles.js"></script>
+        <script src="short-dom.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
